@@ -1,0 +1,14 @@
+{
+    "name": "famelo/doctrineextensions",
+    "type": "typo3-flow-package",
+    "description": "Add description here",
+    "require": {
+        "typo3/flow": "*",
+        "gedmo/doctrine-extensions": "2.3.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Famelo\\DoctrineExtensions": "Classes"
+        }
+    }
+}

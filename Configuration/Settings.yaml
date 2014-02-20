@@ -1,0 +1,14 @@
+TYPO3:
+  Flow:
+    object:
+      excludeClasses:
+        'gedmo.*' : ['.*']
+
+    persistence:
+      doctrine:
+        eventSubscribers:
+          - '\Gedmo\Timestampable\TimestampableListener'
+          - '\Gedmo\Translatable\TranslatableListener'
+          - '\Gedmo\SoftDeleteable\SoftDeleteableListener'
+        filters:
+          'soft-deleteable': '\Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter'
