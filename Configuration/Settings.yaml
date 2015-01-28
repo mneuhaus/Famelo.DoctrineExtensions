@@ -3,6 +3,7 @@ TYPO3:
     object:
       excludeClasses:
         'gedmo.*' : ['.*']
+        'Behat.*' : ['.*']
 
     persistence:
       doctrine:
